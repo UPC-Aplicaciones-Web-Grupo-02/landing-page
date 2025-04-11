@@ -12,49 +12,54 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="styles/header.css">
-
     <link rel="icon" href="public/assets/picture/Logo01.png">
-
     <title>Movix</title>
+    <style>
+        .active-mobile {
+            display: none;
+        }
 
+        @media only screen and (max-width: 768px) {
+            .option-mobile {
+                display: none;
+            }
+
+            .active-mobile {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary class-header px-5">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white d-flex align-items-center" href="#">
-                <img src="public/assets/picture/Logo01.png" alt="" width="60" height="60" style="border-radius: 10px;">
-                <span class="ms-2">Movix</span>
-            </a>
-            <!-- Botón Icono para responsive -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Contenido o botones principales -->
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <form class="d-flex ms-auto">
-                    <a href="#hero" class="btn btn-success clase-btn me-2" type="button">Inicio</a>
-                    <a href="#about-us" class="btn btn-success clase-btn me-2" type="button">Sobre Nosotros</a>
-                    <a href="#services" class="btn btn-success clase-btn me-2" type="button">Servicios</a>
-                    <a href="#pricing" class="btn btn-success clase-btn me-2" type="button">Planes</a>
-                    <a href="#about-team" class="btn btn-success clase-btn me-2" type="button">Equipo</a>
-                    <a href="#" class="btn btn-primary clase-btn mx-5" type="button">Empieza Ya!</a>
-                </form>
+    <section id="hero">
+        <div class="position-relative">
+            <img src="public/assets/picture/Fondo-imagen.png" class="img-fluid d-block mx-auto"
+                style="border-radius: 10px;" alt="Scooter 1">
+            <div class="position-absolute top-0 start-50 translate-middle-x mt-5 option-mobile">
+                <a href="#hero" class="btn btn-light clase-btn me-2" type="button">Inicio</a>
+                <a href="#about-us" class="btn btn-light clase-btn me-2" type="button">Sobre
+                    Nosotros</a>
+                <a href="#services" class="btn btn-light clase-btn me-2" type="button">Servicios</a>
+                <a href="#pricing" class="btn btn-light clase-btn me-2" type="button">Planes</a>
+                <a href="#about-team" class="btn btn-light clase-btn me-2" type="button">Equipo</a>
+                <a href="#" class="btn btn-primary clase-btn mx-5" type="button">Empieza Ya!</a>
+            </div>
+            <div class="position-absolute top-50 start-50 translate-middle text-center option-mobile">
+                <p>Bienvenido a Movix</p>
+                <h4>¿Estas listo para </br> nuevas aventuras?</h4> <br>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <section id="hero" class="d-flex align-items-center vh-100 img-main"
-        style="background-image: url('public/assets/picture/Fondo-imagen.png'); background-size: cover; background-position: center; background-repeat: no-repeat; position: relative;">
-        <div class="container position-relative z-index-2">
-            <div class="row align-items-center py-1">
-                <div class="col-lg-6 offset-lg-5 text-center text-lg-start">
-                    <p class="h1 mb-3 lang" key="titleHero" style="color: #333647; font-size: 22px">Bienvenido a
-                        Movix</p>
-                    <h2 class="mb-4 lang" key="subTitleHero" style="color: #333647; font-size: 18px">¿ESTÁS LISTO
-                        PARA NUEVAS AVENTURAS?</h2>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <section id="mobile">
+        <div class="container py-4 active-mobile">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 mx-auto text-center">
+                    <p>Bienvenido a Movix</p>
+                    <h4>¿Estas listo para </br> nuevas aventuras?</h4> <br>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
@@ -63,7 +68,8 @@
     <section id="about-us">
         <div class="container py-4">
             <div class="row">
-                <div class="col-sm-6 col-md-6 col-lg-6 p-3">
+                <!-- Contenedio de información del lado izquierdo -->
+                <div class="col-sm-12 col-md-6 col-lg-6 p-3">
                     <div class="p-3">
                         <h3 class="text-center">Sobre Nosotros</h3>
                         <p>Somos el equipo perfecto para solucionar tus problemas con el transporte urbano.</p>
@@ -81,7 +87,8 @@
                         scooters son una opción sostenible y divertida para moverte por la ciudad.
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-6 col-lg-6 p-3 text-center">
+                <!-- Imagen del cont. lado derecho -->
+                <div class="col-sm-12 col-md-6 col-lg-6 p-3 text-center">
                     <img src="public/assets/picture/1-scooter.png" class="d-block mx-auto"
                         style="border-radius: 8px; max-width: 100%;" alt="Scooter 1">
                 </div>
@@ -90,48 +97,60 @@
     </section>
 
     <section id="services">
-        <div class="py-5 text-center" style="background-color: rgb(206, 205, 205);">
-            <div class="text-center">
-                <h4 class="mb-3 title lang">Nuestros servicios</h4>
-                <p class="card-text mx-5">Nuestra aplicación ofrece una variedad de
-                    servicios innovadores diseñados para facilitar tu experiencia de viaje. Aquí tienes una visión
-                    general de lo que ofrecemos</p>
-            </div>
-            <div class="container py-4">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6 p-3">
-                        <div class="p-3" style="background-color: azure; border-radius: 10px;">
-                            <h3>Estudiantes Universitarios</h3>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, harum delectus modi
-                            eveniet
-                            doloribus cumque necessitatibus eaque, mollitia quia corporis sed recusandae, rerum sunt
-                            adipisci!
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="py-5 text-center" style="background-color: rgb(206, 205, 205); border-radius: 10px;">
+                        <div class="text-center">
+                            <h4 class="mb-3 title lang">Nuestros servicios</h4>
+                            <p class="card-text mx-5">Nuestra aplicación ofrece una variedad de
+                                servicios innovadores diseñados para facilitar tu experiencia de viaje. Aquí tienes una
+                                visión
+                                general de lo que ofrecemos</p>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6 p-3">
-                        <div class="p-3" style="background-color: azure; border-radius: 10px;">
-                            <h3>Publico en general</h3>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, harum delectus modi
-                            eveniet
-                            doloribus cumque necessitatibus eaque, mollitia quia corporis sed recusandae, rerum sunt
-                            adipisci!
+                        <div class="container py-4">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6 col-lg-6 p-3">
+                                    <div class="p-3" style="background-color: azure; border-radius: 10px;">
+                                        <h3>Estudiantes Universitarios</h3>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, harum
+                                        delectus modi
+                                        eveniet
+                                        doloribus cumque necessitatibus eaque, mollitia quia corporis sed recusandae,
+                                        rerum sunt
+                                        adipisci!
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-6 col-lg-6 p-3">
+                                    <div class="p-3" style="background-color: azure; border-radius: 10px;">
+                                        <h3>Publico en general</h3>
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, harum
+                                        delectus modi
+                                        eveniet
+                                        doloribus cumque necessitatibus eaque, mollitia quia corporis sed recusandae,
+                                        rerum sunt
+                                        adipisci!
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
             </div>
-
-            <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-
     </section>
 
     <section id="pricing">
-        <div class="py-5 text-center">
+        <div class="container py-5 text-center">
             <div class="text-center pb-5">
-                <h4 class="mb-3 title lang">Nuestros Suscripciones</h4>
-                <p class="card-text mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium
-                    repellendus numquam. Aliquam quae hic voluptatibus perferendis incidunt modi laborum officia ducimus
-                    quibusdam, commodi sit iste quo eos, veniam fugit?</p>
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h4 class="mb-3 title lang">Nuestros Suscripciones</h4>
+                    <p class="card-text mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium
+                        repellendus numquam. Aliquam quae hic voluptatibus perferendis incidunt modi laborum officia
+                        ducimus
+                        quibusdam, commodi sit iste quo eos, veniam fugit?</p>
+                </div>
             </div>
             <div class="container">
                 <div class="row">
@@ -177,13 +196,17 @@
     </section>
 
     <section id="about-team">
-        <div class="py-5 text-center">
-            <div class="text-center pb-5">
-                <h4 class="mb-3 title lang">Equipo de desarrollo</h4>
-                <p class="card-text mx-5">Somos un grupo de estudiantes de Ingeniería de Software de la Universidad
-                    Peruana de Ciencias Aplicadas. Nos hemos unido para formar un equipo de desarrollo que trabaja en
-                    una aplicación web. Cada uno de nosotros aporta habilidades y experiencia únicas en diferentes áreas
-                    del desarrollo de software.</p>
+        <div class=" container text-center">
+            <div class="row pb-5">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h4 class="mb-3 title lang">Equipo de desarrollo</h4>
+                    <p class="card-text mx-5">Somos un grupo de estudiantes de Ingeniería de Software de la Universidad
+                        Peruana de Ciencias Aplicadas. Nos hemos unido para formar un equipo de desarrollo que trabaja
+                        en
+                        una aplicación web. Cada uno de nosotros aporta habilidades y experiencia únicas en diferentes
+                        áreas
+                        del desarrollo de software.</p>
+                </div>
             </div>
             <div class="container">
                 <div class="row">
@@ -300,58 +323,57 @@
         </div>
     </section>
 
-
-    <div id="footer">
-        <div class="py-5 text-center" style="background-color: #c8c9cc;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <h5 class="section-footer" key="title1Footer">Logo</h5>
-                        <img src="public/assets/picture/Logo01.png" alt=""
-                            style="border-radius: 50%; width: 100px; height: 100px;">
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <h5 class="section-footer" key="title1Footer">Aplicación:</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#about-us" class="lang" key="subTitle1Footer">Quienes Somos</a></li>
-                            <li><a href="#services" class="lang" key="subTitle2Footer">Nuestros servicios</a></li>
-                            <li><a href="#pricing" class="lang" key="subTitle3Footer">Suscripciones</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <h5 class="section-footer" key="title2Footer">Sugerencias:</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="lang" key="section2SubTitle1Footer">FAQ's</a></li>
-                            <li><a href="#" class="lang" key="section2SubTitle2Footer">Politica de privacidad</a></li>
-                            <li><a href="#" class="lang" key="section2SubTitle3Footer">Nuestras politicas</a></li>
-                            <li><a href="#" class="lang" key="section2SubTitle4Footer">Nuestros clientes</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-12 col-md-3 col-lg-3">
-                        <h5 class="section-footer" key="title3Footer">Nuestras Redes sociales: </h5>
-                        <div class="text-center mt-5">
-                            <div class="social-icons">
-                                <a class="mx-2" href="https://www.facebook.com" target="_blank"
-                                    style="font-size: 25px;"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a class="mx-2" href="https://twitter.com" target="_blank" style="font-size: 25px;"><i
-                                        class="fa-brands fa-twitter"></i></a>
-                                <a class="mx-2" href="https://www.instagram.com" target="_blank"
-                                    style="font-size: 25px;"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-                        </div>
+    <section id="footer">
+        <div class="container">
+            <div class="row" style="background-color: rgb(206, 205, 205);">
+                <div class="col-sm-12 col-md-3 col-lg-3 text-center py-4">
+                    <h5 class="section-footer" key="title1Footer">Logo</h5>
+                    <img src="public/assets/picture/Logo01.png" alt=""
+                        style="border-radius: 10px; width: 50px; height: 50px;">
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 py-4 text-center">
+                    <h5 class="section-footer" key="title1Footer">Aplicación:</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about-us" class="lang" key="subTitle1Footer">Quienes Somos</a></li>
+                        <li><a href="#services" class="lang" key="subTitle2Footer">Nuestros servicios</a></li>
+                        <li><a href="#pricing" class="lang" key="subTitle3Footer">Suscripciones</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 py-4 text-center">
+                    <h5 class="section-footer" key="title2Footer">Sugerencias:</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="lang" key="section2SubTitle1Footer">FAQ's</a></li>
+                        <li><a href="#" class="lang" key="section2SubTitle2Footer">Politica de privacidad</a></li>
+                        <li><a href="#" class="lang" key="section2SubTitle3Footer">Nuestras politicas</a></li>
+                        <li><a href="#" class="lang" key="section2SubTitle4Footer">Nuestros clientes</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 text-center py-4">
+                    <h5 class="section-footer" key="title3Footer">Nuestras Redes sociales: </h5>
+                    <div class="pt-4">
+                        <a class="mx-2" href="https://www.facebook.com" target="_blank" style="font-size: 25px;"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a class="mx-2" href="https://twitter.com" target="_blank" style="font-size: 25px;"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a class="mx-2" href="https://www.instagram.com" target="_blank" style="font-size: 25px;"><i
+                                class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom py-3">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <p class="text-center">© 2025 Movix Todos los derechos reservados</p>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row" style="background-color: rgb(107, 140, 223);">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="row justify-content-center py-3">
+                        <p class="text-center">© 2025 Movix Todos los derechos reservados</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </section>
 </body>
 
 </html>

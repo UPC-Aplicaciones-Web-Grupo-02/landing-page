@@ -31,4 +31,8 @@ body {
     .botones {
         display: none;
     }
+
+    .mobile {
+        color: white;
+    }
 }

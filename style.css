@@ -27,6 +27,10 @@ body {
     background-color: black;
     color: white;
 }
+section {
+    scroll-margin-top: 80px;
+}
+
 
 @media screen and (max-width: 800px) {
     .botones {

@@ -17,34 +17,46 @@
 </head>
 
 <body>
-    <section id="hero">
-        <nav class="navbar navbar-light py-2">
-            <div class="container-fluid">
-                <a class="navbar-brand ms-5" href="#">
-                    <img src="./public/assets/picture/logo-movix.png" alt="Logo Movix" width="75px" height="60px">
-                    Movix
-                </a>
-                <div class="me-5 botones">
-                    <a href="#hero" type="button" class="btn-m">Inicio</a>
-                    <a href="#about-us" type="button" class="btn-m">Sobre Nosotros</a>
-                    <a href="#services" type="button" class="btn-m">Planes</a>
-                    <a href="#about-team" type="button" class="btn-m">Equipo</a>
-                </div>
-            </div>
-        </nav>
-    </section>
-
-    <section id="hero">
-        <div class="position-relative">
-            <img src="public/assets/picture/Fondo-imagen.png" class="img-fluid d-block mx-auto"
-                style="border-radius: 10px;" alt="Scooter 1">
-            <div class="position-absolute top-50 start-50 translate-middle text-center option-mobile">
-                <p class="mobile">Bienvenido a Movix</p>
-                <h4 class="mobile">¿Estas listo para </br> nuevas aventuras?</h4> <br>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+<section id="hero">
+    <nav class="navbar navbar-light py-2 fixed-top" style="background-color: white; z-index: 1000;">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#">
+                <img src="./public/assets/picture/logo-movix.png" alt="Logo Movix" width="75px" height="60px">
+                Movix
+            </a>
+            <div class="me-5 botones">
+                <a href="#hero" type="button" class="btn-m">INICIO</a>
+                <a href="#about-us" type="button" class="btn-m">SOBRE NOSOTROS</a>
+                <a href="#services" type="button" class="btn-m">NUESTROS SERVICIOS</a>
+                <a href="#pricing" type="button" class="btn-m">PLANES</a>
+                <a href="#about-team" type="button" class="btn-m">EQUIPO</a>
+                <a href="#footer" type="button" class="btn-m">CONTACTO</a>
+                <a href="#" type="button" class="btn-m">NUESTRA PÁGINA</a>
+                <a href="public/assets/indexen.html" type="button" class="btn-m" >ES/EN</a>
             </div>
         </div>
-    </section>
+    </nav>
+</section>
+
+
+<section id="hero" style="padding-top: 80px;">
+    <div class="position-relative">
+        <img src="public/assets/picture/Fondo-imagen.png" class="img-fluid d-block mx-auto"
+             style="border-radius: 10px;" alt="Scooter 1">
+        <div class="position-absolute top-0 start-50 translate-middle-x text-center option-mobile"
+             style="padding-top: 20px; z-index: 2;">
+            <p class="mobile" style="font-size: 50px; color: black;">Bienvenido a Movix</p>
+        </div>
+        <div class="position-absolute top-50 start-50 translate-middle text-center option-mobile" style="z-index: 1;">
+            <h4 class="mobile">¿Estás listo para </br> nuevas aventuras?</h4> <br>
+            <a href="#" class="btn btn-primary" style="font-size: 30px">¡Vamos!</a>
+        </div>
+    </div>
+</section>
+</body>
+
+
+
 
     <section id="about-us">
         <div class="container py-4">
@@ -52,9 +64,11 @@
                 <div class="col-sm-12 col-md-6 col-lg-6 p-3">
                     <div class="p-3">
                         <h3 class="text-center">Sobre Nosotros</h3>
-                        <p style="font-size: 18px;" class="text-center">Somos el equipo perfecto para solucionar tus
-                            problemas con el
-                            transporte urbano Scooters eléctricos seguros y accesibles en Lima </br></br>
+                        <p style="font-size: 18px;" class="text-center">Innovatech es una startup innovadora fundada
+                            por estudiantes de Ingeniería de Software de la Facultad de Ingeniería de la Universidad
+                            Peruana de Ciencias Aplicadas. Nuestra empresa se enfoca en desarrollar una solución web,
+                            llamada Movix, utilizando tecnologías modernas para facilitar el alquiler de
+                            scooters eléctricos en Lima.</br></br>
                         <div style="margin-left: 30%; font-size: 18px;">
                             🛵 Alquila fácil </br></br>
                             💳 paga justo </br> </br>
@@ -106,66 +120,52 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <a href="#" class="btn btn-primary">¡Vamos!</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="pricing">
-        <div class="container py-5 text-center">
-            <div class="text-center pb-5">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <h4 class="mb-3 title lang">Nuestros Suscripciones</h4>
-                    <p class="card-text mx-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum praesentium
-                        repellendus numquam. Aliquam quae hic voluptatibus perferendis incidunt modi laborum officia
-                        ducimus
-                        quibusdam, commodi sit iste quo eos, veniam fugit?</p>
+<section id="pricing">
+    <div class="container py-5 text-center">
+        <h4 class="mb-3 title lang">Nuestras Suscripciones</h4>
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 p-2">
+                <div class="p-4" style="background-color: rgb(174, 178, 173); border-radius: 10px;">
+                    <img src="public/assets/picture/1-scooter.png" alt="" style="border-radius: 50%; width: 150px; height: 150px;">
+                    <h3>Plan Estudiantil</h3>
+                    <p>¡Descuentos exclusivos para estudiantes! Muestra tu carnet universitario y accede a tarifas súper rebajadas. Muévete por la ciudad sin romper tu presupuesto.</p>
+                    <p><strong>S/.99 al mes</strong></p>
+                    <p><small>10% de descuento con carnet universitario</small></p>
+                    <a href="#" class="btn btn-primary">Suscribirse</a>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-                        <div class="p-4" style="background-color: rgb(174, 178, 173); border-radius: 10px;">
-                            <img src="public/assets/picture/1-scooter.png" alt=""
-                                style="border-radius: 50%; width: 150px; height: 150px;">
-                            <h3>Suscripción Mensual</h3>
-                            Ideal para quienes se mueven todos los días.
-                            Accede a nuestros scooters ilimitadamente durante todo el mes.
-                            Sin preocupaciones, sin cargos extra. ¡Súbete y listo! <br> <br>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-                        <div class="p-4" style="background-color: rgb(174, 178, 173); border-radius: 10px;">
-                            <img src="public/assets/picture/1-scooter.png" alt=""
-                                style="border-radius: 50%; width: 150px; height: 150px;">
-                            <h3> Suscripción Anual</h3>
-                            Tu movilidad asegurada todo el año.
-                            Ahorra más con nuestro plan anual. Viaja libremente por Lima con la tarifa más baja por
-                            viaje.
-                            ¡Más tiempo, más beneficios! <br> <br>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 p-2">
-                        <div class="p-4" style="background-color: rgb(174, 178, 173); border-radius: 10px;">
-                            <img src="public/assets/picture/1-scooter.png" alt=""
-                                style="border-radius: 50%; width: 150px; height: 150px;">
-                            <h3>Plan Estudiantil</h3>
-                            ¡Descuentos exclusivos para estudiantes!
-                            Muestra tu carnet universitario y accede a tarifas súper rebajadas.
-                            Muévete por la ciudad sin romper tu presupuesto. <br> <br>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 p-2">
+                <div class="p-4" style="background-color: rgb(174, 178, 173); border-radius: 10px;">
+                    <img src="public/assets/picture/1-scooter.png" alt="" style="border-radius: 50%; width: 150px; height: 150px;">
+                    <h3>Suscripción Mensual</h3>
+                    <p>Ideal para quienes se mueven todos los días. Accede a nuestros scooters ilimitadamente durante todo el mes. Sin preocupaciones, sin cargos extra. ¡Súbete y listo!</p>
+                    <p><strong>S/.129 al mes</strong></p>
+                    <a href="#" class="btn btn-primary">Suscribirse</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 p-2">
+                <div class="p-4" style="background-color: rgb(174, 178, 173); border-radius: 10px;">
+                    <img src="public/assets/picture/1-scooter.png" alt="" style="border-radius: 50%; width: 150px; height: 150px;">
+                    <h3>Suscripción Anual</h3>
+                    <p>Tu movilidad asegurada todo el año. Ahorra más con nuestro plan anual. Viaja libremente por Lima con la tarifa más baja por viaje. ¡Más tiempo, más beneficios!</p>
+                    <p><strong>S/.1,399 al año</strong></p>
+                    <p><small>Ahorra S/.149 al año</small></p>
+                    <a href="#" class="btn btn-primary">Suscribirse</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about-team">
+
+<section id="about-team">
         <div class=" container text-center">
             <div class="row pb-5">
                 <div class="col-sm-12 col-md-12 col-lg-12">

@@ -1,4 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+:root {
+    --primary: #39ac26;
+    --secondary: #34495E;
+    --complementary: #ffffff;
+    --white: #ffffff;
+}
+
+
+.navbar {
+    background-color: var(--white) !important;
+    box-shadow: 0 2px 6px rgb(52, 73, 94);
+}
+.navbar-brand {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-brand:hover {
+    color: var(--primary);
+}
+.btn-m {
+    color: var(--secondary);
+    font-weight: 500;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+.btn-m:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #000;
+}
+.btn-primary:hover {
+    background-color: #3db52a;
+    border-color: #39ac26;
+    color: #000;
+}
+
+
+#hero {
+    background-color: var(--complementary);
+}
+#hero .img-fluid {
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+#hero .mobile {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+
+.video iframe,
+#about-us img,
+#about-team img {
+    border-radius: 12px;
+    background-color: var(--complementary);
+    border: 2px solid var(--secondary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+#services .p-3,
+#pricing .p-4 {
+    background-color: var(--complementary);
+    color: var(--secondary);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+#services h3,
+#pricing h3 {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+
+#about-team .pt-3 h4 {
+    color: var(--secondary);
+}
+#about-team img {
+    border: 3px solid var(--primary);
+}
+
+
+.title {
+    color: var(--secondary);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+p {
+    color: #333;
+}
 * {
     padding: 0px;
     margin: 0px;

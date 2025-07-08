@@ -138,16 +138,3 @@ section {
     height: 415px;
 }
 
-@media screen and (max-width: 800px) {
-    .botones {
-        display: none;
-    }
-
-    .mobile {
-        color: white;
-    }
-    .url {
-        width: 100%;
-        height: 200px;
-    }
-}
